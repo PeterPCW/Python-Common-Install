@@ -6,6 +6,18 @@ This is a generalized requirements.txt to install common packages for python dev
 
 ## Usage
 
-Run: "pip install -U -r requirements.txt"
+After syncing this will install the newest version of all packages listed.
 
-Then: "python freeze > requirements.txt" to update, but afterward you have to Find -> Replace All "==" with ">=".
+```bash
+pip install -U -r requirements.txt
+```
+
+## Update
+
+After install you can use `freeze` to update the file.
+
+```bash
+pip freeze > requirements.txt
+```
+
+Note: You will have to Find -> Replace All "==" with ">=" to get back to the forward compatible state.
