@@ -21,3 +21,5 @@ pip freeze > requirements.txt
 ```
 
 Note: You will have to Find -> Replace All "==" with ">=" to get back to the forward compatible state.
+
+OR: You can run `DescribePackagesAndReformat.py` to get back to ">=" while adding descriptions like the current file has.
