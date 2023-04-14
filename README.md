@@ -6,7 +6,7 @@ This is a generalized requirements.txt to install common packages for python dev
 
 * `requirements.txt` has all of the python packages with descriptions
 * `requirements.txt_backup` has all of the packages without descriptions - if that's more your thing
-* `DescribePackagesAndReformat.py` is a script to convert a requirements.txt_backup style list into a requirements.txt style list, for after you `freeze` your system setup back into requirements.txt
+* `DescribePackagesAndReformat.py` is a script to convert a requirements.txt_backup style list into a requirements.txt style list, for after you `freeze` your system setup back into `requirements.txt` (see below)
 
 ## Usage
 
