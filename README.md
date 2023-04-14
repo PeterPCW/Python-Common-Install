@@ -1,7 +1,5 @@
 # Python Common Install
 
-## Note
-
 This is a generalized requirements.txt to install common packages for python development. I will add packages as I need them. Using >= allows for forward compatibility to always install newest.
 
 ## Files
