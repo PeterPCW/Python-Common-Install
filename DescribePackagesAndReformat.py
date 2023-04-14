@@ -21,12 +21,14 @@ pypi = xmlrpc.client.ServerProxy("https://pypi.python.org/pypi")
 with open(input_filename, 'r') as input_file, open(output_filename, 'w') as output_file:
     
     # set expectations
-    print("\n\n##   with the default file (~250 lines) this will take ~10 minutes to complete due to rate limits")
-    print("##   Started:", start_time)
-    print("\n\n##   only every 7th package will be printed to balance brevity with frequent updates")
-    print("##   packages are in alphabetical order after a `freeze`\n\n")
-    print("##   use Ctrl+C to cancel at any time - requirements.txt will be unchanged")
-    print("##   if you cancel, you will need to delete output.txt manually\n\n")
+    print("################################################\n")
+    print("\n#\n###   with the default file (~250 lines) this will take ~8 minutes to complete due to rate limits")
+    print("###   Started:", start_time)
+    print("\n#\n###   only every 7th package will be printed to balance brevity with frequent updates")
+    print("###   packages are in alphabetical order after a `freeze`\n#\n#")
+    print("###   use Ctrl+C to cancel at any time - requirements.txt will be unchanged")
+    print("###   if you cancel, you will need to delete output.txt manually\n#\n#")
+    print("################################################\n")
     
     # write preamble to file
     output_file.write('################################################\n#                                              #\n#   This is a generalized requirements.txt     #\n#   to install common packages for python      #\n#   development. I will add packages as I      #\n#   need them. Using >= allows for forward     #\n#   compatibility to always install newest.    #\n#                                              #\n#   Use: "pip install -U -r requirements.txt"  #\n#                                              #\n#   Then: "pip freeze > requirements.txt"      #\n#   to update, but afterward you have to       #\n#   Find -> Replace All ">=" with ">="         #\n#   or run `DescribePackagesAndReformat.py`.   #\n#                                              #\n################################################\n\n')
