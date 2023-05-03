@@ -22,9 +22,9 @@ with open(input_filename, 'r') as input_file, open(output_filename, 'w') as outp
     
     # set expectations
     print("################################################\n")
-    print("\n#\n###   with the default file (~250 lines) this will take ~8 minutes to complete due to rate limits")
+    print("#\n###   with the default file (~250 lines) this will take ~10 minutes to complete due to rate limits")
     print("###   Started:", start_time)
-    print("\n#\n###   only every 7th package will be printed to balance brevity with frequent updates")
+    print("#\n###   only every 7th package will be printed to balance brevity with frequent updates")
     print("###   packages are in alphabetical order after a `freeze`\n#\n#")
     print("###   use Ctrl+C to cancel at any time - requirements.txt will be unchanged")
     print("###   if you cancel, you will need to delete output.txt manually\n#\n#")
