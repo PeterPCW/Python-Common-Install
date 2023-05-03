@@ -24,6 +24,14 @@ After install you can use `freeze` to update the file.
 pip freeze > requirements.txt
 ```
 
+## Maintain Forward Compatibility
+
 Note: You will have to Find -> Replace All "==" with ">=" to get back to the forward compatible state.
 
-OR: You can run `DescribePackagesAndReformat.py` to get back to ">=" while adding descriptions like the current file has. This will update and overwrite requirements.txt_backup as well.
+OR:
+
+You can run `DescribePackagesAndReformat.py` to get back to ">=" while adding descriptions like the current file has. This will update and overwrite requirements.txt_backup as well.
+
+OR:
+
+If you have initialized the repo and want to maintain your copy on github, I automated the describe/deploy steps in `deploy.py`.
